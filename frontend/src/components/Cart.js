@@ -21,7 +21,7 @@ const Cart = ({ cartItems }) => {
             <img src={item.imageUrl} alt={item.name} className="w-16 h-16 object-cover" />
             <div className="ml-4">
               <h3 className="text-lg">{item.name}</h3>
-              <p>${item.price}</p>
+              <p>₹ {item.price}</p>
               <p>Quantity: {item.quantity}</p>
             </div>
           </li>

@@ -7,7 +7,7 @@ const ProductDetail = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`https://ecom-project-ebon.vercel.app/${id}`)
       .then(response => response.json())
       .then(data => setProduct(data));
   }, [id]);

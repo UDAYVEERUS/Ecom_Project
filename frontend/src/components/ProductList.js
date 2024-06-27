@@ -5,7 +5,7 @@ const ProductList = ({ addToCart }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch('https://ecom-project-ebon.vercel.app/api/products')
       .then(response => response.json())
       .then(data => setProducts(data));
   }, []);
