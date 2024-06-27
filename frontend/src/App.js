@@ -34,7 +34,6 @@ const App = () => {
       <div>
         <Navbar />
         <div className="container mx-auto p-4">
-          {/* <h1 className="text-4xl mb-4">Product List</h1> */}
           <Routes>
             <Route path="/" element={<ProductList addToCart={addToCart} />} />
             <Route path="/cart" element={<Cart cartItems={cartItems} />} />
